@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="agency_db" transaction-type="RESOURCE_LOCAL">
+            <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="javax.persistence.jdb.url" value="jdbc:sqlserver://localhost:1433;databaseName=SQL_Dumps;integratedSecurity=true"/>
+        <property name="javax.persistence.schema-generation.database.action" value="update"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+        <property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=SQL_Dumps;integratedSecurity=true;"/>
+    </properties>
+    </persistence-unit>
+</persistence>

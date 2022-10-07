@@ -1,0 +1,19 @@
+JPA
+Persistence with
+*JPA: META-INF/persistence.xml
+*Hibernate: hibernate.cfg.xml
+
+*DAO - Data Access Objects
+
+*******************************
+Entidadea -> Tablas de la BD
+DAO -> CRUD
+*******************************
+
+Projecto
+ - Interfaz (Operaciones Comunes, Insertar, Modificar, Borrar, Seleccionar)
+ - Class Abstracta (Implementa lo común o generica de las entidades).
+ - Clase DAO por cada entidad para agregar metodos especificos a cada entidad.
+
+
+
