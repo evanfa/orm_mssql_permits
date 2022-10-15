@@ -14,10 +14,13 @@
     </properties>
 
     <dependencies>
+
+
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>11.2.1.jre11</version>
+            <artifactId>mssql-jdbc_auth</artifactId>
+            <version>11.2.1.x86</version>
+            <type>dll</type>
         </dependency>
 
         <dependency>
