@@ -11,9 +11,8 @@ public class EntityManagerUtilities {
         return manager;
     }
 
-    public static void main(String[] args) {
-        //Security.setProperty("jdk.tls.disabledAlgorithms","SSLv3, RC4, DES, MD5withRSA, DH keySize < 1024,EC keySize < 224, 3DES_EDE_CBC, anon, NULL");
+    /*public static void main(String[] args) {
         EntityManager manager = EntityManagerUtilities.getEntityManager();
         System.out.println("Entity Manager Class ==> "+manager.getClass().getCanonicalName());
-    }
+    }*/
 }

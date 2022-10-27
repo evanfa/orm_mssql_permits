@@ -30,6 +30,21 @@ public class Agency {
     @Column(name="id_permit")
     private String idPermit;
 
+    public Agency(){
+
+    }
+
+    public Agency(String agencyDetails, String agencyAdress, int idCity, int idState, String officeDays, String officeHours, String agencyNotes, String idPermit) {
+        this.agencyDetails = agencyDetails;
+        this.agencyAdress = agencyAdress;
+        this.idCity = idCity;
+        this.idState = idState;
+        this.officeDays = officeDays;
+        this.officeHours = officeHours;
+        this.agencyNotes = agencyNotes;
+        this.idPermit = idPermit;
+    }
+
     public String getAgencyDetails() {
         return agencyDetails;
     }
@@ -92,5 +107,20 @@ public class Agency {
 
     public void setIdPermit(String idPermit) {
         this.idPermit = idPermit;
+    }
+
+    @Override
+    public String toString() {
+        return "Agency{" +
+                "id_agency=" + id_agency +
+                ", agencyDetails='" + agencyDetails + '\'' +
+                ", agencyAdress='" + agencyAdress + '\'' +
+                ", idCity=" + idCity +
+                ", idState=" + idState +
+                ", officeDays='" + officeDays + '\'' +
+                ", officeHours='" + officeHours + '\'' +
+                ", agencyNotes='" + agencyNotes + '\'' +
+                ", idPermit='" + idPermit + '\'' +
+                '}';
     }
 }
