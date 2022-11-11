@@ -6,7 +6,6 @@
         <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=SQL_Dumps;integratedSecurity=true;trustServerCertificate=true;"/>
         <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
         <property name="javax.persistence.schema-generation.database.action" value="update"/>
-
         <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />
         <property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;encrypt=true;databaseName=SQL_Dumps;integratedSecurity=true;trustServerCertificate=true;"/>
     </properties>
